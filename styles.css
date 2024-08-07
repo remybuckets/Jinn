@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+AR:wght@100..400&family=Sankofa+Display&display=swap');
+*{
+    font-family: 'Montserrat', sans-serif;   
+    text-align: center;
+}
+/*------------------------------------------- NAVBAR --------------------------------------------------------------*/
+.container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    min-width: 500px;
+}
+/*------------------------------------------- INTRO ---------------------------------------------------------------------------------------------------------------------*/
+.intro{
+    display: flex;
+    flex-wrap: wrap;
+    justify-items: center;
+    align-items: center;
+    min-width: 500px;
+    justify-content: space-evenly;
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+.intro-image{
+    height: 500px;
+    width: 500px;
+    background-size: contain;
+    object-fit: scale-down;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+    background-image: url('./images/jinntro.jpeg');
+}
+.words{
+    text-align: center;
+    color: aliceblue;
+}
+@media (max-width:900px){
+}
+@media(max-width: 690px){
+    .intro-image{
+        height: 300px;
+        width: 300px;
+    }
+    .words{
+        padding-top: 100px;
+    }
+}
+    
+/*------------------------------------------- ABOUT ---------------------------------------------------------------------------------------------------------------------*/
+.about{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-items: center;
+    min-width: 500px;
+}
+.about-info{
+    display: flex;
+    flex-wrap: wrap; /*Initially not included*/
+    justify-items: center;
+    align-items: center;
+    min-width: 500px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.about-text{
+    grid-column: 1 / 3;
+    text-align: center;
+    margin-bottom: 100px;
+}
+.about-img{
+    background-image: url('./images/about.jpeg');
+    height: 300px;
+    width: 300px;
+    background-size: contain;
+    object-fit: scale-down;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+}
+p{
+    color: black;
+}
+/*------------------------------------------- CARDS ---------------------------------------------------------------------------------------------------------------------*/
+.card{
+    background: aliceblue;
+    width: 270px;
+    margin: 10px;
+    border-radius: 10px;
+}
+.card h2{
+    text-align: center;
+}
+.card p{
+    padding: 10px;
+}
+.long-card h2{
+    text-align: center;
+}
+.long-card p{
+    padding: 10px;
+}
+.cirque{
+    background-image: url('./images/cirque.jpeg');
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-position: center;
+}
+.reign{
+    background-image: url('./images/reign.jpeg');
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-position: center;
+}
+.tabu{
+    background-image: url('./images/tabu.jpeg');
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-position: center;
+}
+.darling{
+    background-image: url('./images/darling.jpeg');
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-position: center;
+}
+.tape{
+    background-image: url('./images/tape.jpeg');
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-position: center;
+}
+.card-image{
+    background-color: black;
+    height: 170px;
+    margin-bottom: 15px;
+    background-size: cover;
+}
+.card a{
+    background-color: black;
+    color: aliceblue;
+    padding: 15px 20px;
+    display: block;
+    text-align: center;
+    margin: 20px 50px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+.card:hover{
+    background-color: rgb(72, 72, 72);
+    color: white;
+    cursor: pointer;
+    transform: scale(1.03);
+    /*transition: all .5s ease;*/
+    transition: all 0.5s ease-in-out;
+}
+.long-card{
+    background: aliceblue;
+    width: 540px;
+    margin: 10px;
+    border-radius: 10px;
+}
+.long-card a{
+    background-color: black;
+    color: aliceblue;
+    padding: 15px 20px;
+    display: block;
+    text-align: center;
+    margin: 20px 50px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+.long-card:hover{
+    background-color: rgb(72, 72, 72);
+    color: white;
+    cursor: pointer;
+    transform: scale(1.03);
+    transition: all 0.5s ease-in-out;
+}
+.slong-card{
+    background: black;
+    width: 300px;
+    border-radius: 10px;
+}
+.slong-card a{
+    background-color: black;
+    color: aliceblue;
+    padding: 15px 20px;
+    display: block;
+    text-align: center;
+    margin: 20px 50px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+/*------------------------------------------- FOOTER ---------------------------------------------------------------------------------------------------------------------*/
+.feet{
+    display: grid;
+    justify-content: space-evenly;
+    grid-template-columns: 1fr 1fr;
+    background-color: aliceblue;
+    margin-top: 100px;
+}
+.feet h1{
+    color: black;
+    padding: 0;
+    margin: 0;
+}
+.feet{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: black;
+    justify-content: space-evenly;
+}
+.feet h1{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    color: aliceblue;
+}
+
+.footer-img{
+    background-image: url("./images/footer.jpeg");
+    margin: 30px 100px;
+    height: 300px;
+    width: 300px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;   
+}
+.navbar{
+    text-align: center;
+}
+.fa-whatsapp {
+    color: aliceblue;
+    font-size: 50px;
+}
+.fa-instagram{
+    font-size: 50px;
+    color: aliceblue;
+}
+.dm{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    align-items: center;
+}
+/*------------------------------------------- MISCELLANEOUS ---------------------------------------------------------------------------------------------------------------------*/
+body{
+    background-color: black;
+}
+h1{
+    color: aliceblue;
+    text-align: center;
+}
+.upper{
+    margin-bottom: 90px;
+    margin-top: 90px;
+    display: grid;
+    align-items: center;
+    text-align: center;
+    min-width: 500px;
+}
+.fades{
+    opacity: 0;
+    transition: all .5s;
+}
+.lfades{
+    opacity: 0;
+    transition: all 1.5s;
+}
+.show{
+    opacity: 1;
+}
+header{
+    position: fixed;
+    width: 100%;
+    padding-top: 8vh;
+    padding-left: 0px;
+    padding-right: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+.lower{
+    padding-bottom: 50px;
+}
+.bottom{
+    margin-bottom: 100px;
+}
+/*------------------------------------------- MEDIA ---------------------------------------------------------------------------------------------------------------------*/
+/*@media (max-width: 940px) {
+    .words{
+        margin-top: 100px;
+    }
+    .about-img{
+        margin-top: 80px;
+    }
+    .intro-image{
+        height: 300px;
+        width: 300px;
+    }
+    .footer-img{
+        height: 200px;
+        width: 200px;
+    }
+    .navbar-nav{
+        flex-wrap: wrap;
+    }
+    .intro{
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+}
+@media (max-width: 694px){
+    .intro{
+        padding: 0;
+        margin: 0;
+    }
+}
+@media (max-width: 400px) {
+    .footer-img{
+        height: 175px;
+        width: 175px;
+    }
+}*/
