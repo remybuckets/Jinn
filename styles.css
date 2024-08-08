@@ -194,12 +194,18 @@ p{
     text-decoration: none;
 }
 .card:hover{
+    p{
+        color: aliceblue;
+    }
     background-color: rgb(72, 72, 72);
     color: white;
     cursor: pointer;
     transform: scale(1.03);
     /*transition: all .5s ease;*/
     transition: all 0.5s ease-in-out;
+}
+.i:hover{
+    cursor: pointer;
 }
 .long-card{
     background: aliceblue;
@@ -349,3 +355,21 @@ img{
     height: 250px;
     width: 250px;
 }
+nav{
+    background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    /*-webkit-backdrop-filter: blur(10px);
+    /*border: 1px solid rgba(255, 255, 255, 0.18);*/
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+@media (max-width: 991px) {
+    .navbar-collapse{
+        height: 150vh;
+        width: 100vw;
+        font-size: 30px;
+        color: black;
+        padding-top: 15rem;
+    }   
+}
+
+
