@@ -356,11 +356,15 @@ img{
     width: 250px;
 }
 nav{
-    background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    /*background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.18);
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+        For a linear gradient
+    
+    */
+    background-color: black;
 }
 @media (max-width: 991px) {
     .navbar-collapse{
