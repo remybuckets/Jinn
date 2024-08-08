@@ -17,9 +17,9 @@
     justify-items: center;
     align-items: center;
     min-width: 500px;
+    margin-top: 200px;
+    margin-bottom: 210px;
     justify-content: space-evenly;
-    margin-top: 150px;
-    margin-bottom: 150px;
 }
 .intro-image{
     height: 500px;
@@ -47,6 +47,19 @@
         padding-top: 150px;
     }
 }
+@media (min-height: 800px){
+    .intro{
+        margin-top: 300px;
+        margin-bottom: 300px
+    }
+}
+@media (min-height: 800px) and (min-width: 1100px) {
+    .intro{
+        margin-top: 200px;
+        margin-bottom: 300px;
+    }
+    
+}
     
 /*------------------------------------------- ABOUT ---------------------------------------------------------------------------------------------------------------------*/
 .about{
@@ -71,6 +84,11 @@
     grid-column: 1 / 3;
     text-align: center;
     margin-bottom: 100px;
+}
+@media (max-width: 900px){
+    .about-img{
+        margin-bottom: 100px;
+    }
 }
 .about-img{
     background-image: url('./images/about.jpeg');
@@ -124,6 +142,31 @@ p{
 }
 .darling{
     background-image: url('./images/darling.jpeg');
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-position: center;
+}
+.amici{
+    background-image: url('./images/amici.WEBP');
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-position: center;
+}
+.bagatelle{
+    background-image: url('./images/bagatelle-1.PNG');
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-position: center;
+}
+.windmill{
+    background-image: url('./images/windmill.WEBP');
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-position: center;
+}
+
+.lusin{
+    background-image: url('./images/Lusin.PNG');
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     background-position: center;
@@ -197,50 +240,33 @@ p{
     text-decoration: none;
 }
 /*------------------------------------------- FOOTER ---------------------------------------------------------------------------------------------------------------------*/
-.feet{
-    display: grid;
-    justify-content: space-evenly;
-    grid-template-columns: 1fr 1fr;
-    background-color: aliceblue;
-    margin-top: 100px;
-}
-.feet h1{
-    color: black;
-    padding: 0;
-    margin: 0;
-}
-.feet{
+.outro{
     display: flex;
     flex-wrap: wrap;
-    background-color: black;
+    justify-items: center;
     justify-content: space-evenly;
+    align-items: center;
+    min-width: 500px;
 }
-.feet h1{
-    padding-top: 100px;
-    padding-bottom: 100px;
-    color: aliceblue;
-}
-
-.footer-img{
-    background-image: url("./images/footer.jpeg");
-    margin: 30px 100px;
+.outro-image{
     height: 300px;
     width: 300px;
     background-size: contain;
+    object-fit: scale-down;
     background-repeat: no-repeat;
     background-position: center;
-    border-radius: 50%;   
-}
-.navbar{
-    text-align: center;
+    border-radius: 50%;
+    background-image: url('./images/footer.jpeg');
 }
 .fa-whatsapp {
     color: aliceblue;
     font-size: 50px;
+    padding: 0 100px 30px;
 }
 .fa-instagram{
     font-size: 50px;
     color: aliceblue;
+    padding: 0 100px 30px;
 }
 .dm{
     display: grid;
@@ -249,6 +275,9 @@ p{
     align-items: center;
 }
 /*------------------------------------------- MISCELLANEOUS ---------------------------------------------------------------------------------------------------------------------*/
+.navbar{
+    text-align: center;
+}
 body{
     background-color: black;
 }
@@ -292,39 +321,31 @@ header{
 .bottom{
     margin-bottom: 100px;
 }
-/*------------------------------------------- MEDIA ---------------------------------------------------------------------------------------------------------------------*/
-/*@media (max-width: 940px) {
-    .words{
-        margin-top: 100px;
-    }
-    .about-img{
-        margin-top: 80px;
-    }
-    .intro-image{
-        height: 300px;
-        width: 300px;
-    }
-    .footer-img{
-        height: 200px;
-        width: 200px;
-    }
-    .navbar-nav{
-        flex-wrap: wrap;
-    }
-    .intro{
-        padding-top: 60px;
-        padding-bottom: 60px;
-    }
+.white{
+    color: aliceblue;
 }
-@media (max-width: 694px){
-    .intro{
-        padding: 0;
-        margin: 0;
-    }
+.bg-dark{
+    text-align: center;
+    min-width: 500px;
 }
-@media (max-width: 400px) {
-    .footer-img{
-        height: 175px;
-        width: 175px;
-    }
-}*/
+/*------------------------------------------- Gallery ---------------------------------------------------------------------------------------------------------------------*/
+.gallery-text{
+    margin-top: 100px;
+    min-width: 500px;
+}
+.row{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minimax(100px, 1fr));
+}
+.column{
+    grid-column: span 3;
+    width: auto;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2 rem;
+}
+img{
+    height: 250px;
+    width: 250px;
+}
